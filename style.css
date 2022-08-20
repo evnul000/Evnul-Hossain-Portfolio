@@ -1,0 +1,223 @@
+@font-face {
+    font-family: DeathHector;
+    src: url('DeathHector.ttf');
+    
+}
+html{
+  overflow: scroll;
+  overflow-x: hidden;
+  overflow-y: overlay;
+  scroll-behavior: smooth;
+}
+
+body{
+    background-color: #3f3f3c;
+    color: #f5e7af;
+    margin:0;
+}
+h2{
+  font-family: DeathHector;
+}
+a{
+  border:none;
+  color:inherit;
+  text-decoration: none;
+  outline:none;
+
+}
+
+.card{ 
+    left: 0;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: visible;
+    background-color: #6a6a66;
+    background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.8),
+      rgb(46, 46, 46)
+    ),
+    url(tropical_3.jpg);
+
+    height: 100%;
+    margin: 0 auto;
+    font-size: 60px;
+    text-align: center;
+    font-family: DeathHector;
+}
+
+.card h2{
+  font-size: 70;
+  margin-top: 20rem;
+}
+.card p{
+  margin-bottom: 20rem;
+  font-size: 30;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Skills h2{
+  margin-top: 10rem;
+  font-size: 40px;
+  
+}
+#Skills img{
+  width: 100px;
+  
+}
+#Skills p{
+  font-size: medium;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#Skills ul{
+  list-style: none;
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-right: 300px;
+  padding-left: 300px;
+}
+#Skills li{
+  margin-left: 100px;
+}
+.About_Me{
+  display:flex;
+  flex-direction: row;
+  justify-content: space-between;
+  visibility: visible;
+  background-color: #363636;
+  height: 100%;
+  margin: 0 auto;
+  font-size: 60px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(19, 19, 19, 0.8),
+      rgba(46, 46, 46, 0.7)
+    ),
+    url(tropical_1.jpg);
+}
+.About_Me span{
+  margin-top:auto;
+  margin-bottom: auto;
+  margin-left: auto;
+  margin-right: 100px;
+  float:left;
+  font-size:20;
+  text-align: center;
+}
+.About_Me h2{
+  margin-top: 10rem;
+  font-size: 40px;
+  margin-left: 250px;
+  height: fit-content;
+}
+.Portfolio_img{
+  margin-left: 206px;
+  margin-right: 25px;
+  margin-top: auto;
+  margin-bottom: auto;
+  float: left;
+  width: 265px;
+}
+
+html::-webkit-scrollbar {
+    
+    width: 12px;
+}
+ 
+/* Handle */
+html::-webkit-scrollbar-thumb { 
+    border-color: #feda4e;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    background: #191924; 
+}
+::-webkit-scrollbar-thumb:window-inactive {
+	background: #191919; 
+}
+ @media
+  (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+.nav{
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.nav{
+  background-color: #191916;
+  display: flex;
+  justify-content:flex-end;
+  align-items: center;
+  width: 100%;
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  
+  }
+  nav ul {
+  list-style-type: none;
+  overflow: hidden;
+  top: 0;
+  position: sticky; 
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.nav-links:hover {
+ cursor:pointer;
+}
+.nav-link:hover:before{
+  height:100%;
+  filter:blur(30px);
+}
+.nav-link:hover:after{
+  height:100%;
+  filter:blur(30px);
+}
+  nav li {
+    margin-right: 2rem;
+    text-decoration: none;
+    list-style: none;
+    color: #f5e7af;
+  } 
+nav img{
+    width: 25px;
+    
+}
+
+.Contact{
+  left: 0;
+    display:flex;
+    flex-direction: column;
+    visibility: visible;
+    background-color: #6a6a66;
+    background-image: linear-gradient(
+      115deg,
+      rgba(0, 0, 0, 0.8),
+      rgb(46, 46, 46)
+    ),
+    url(tropical_3.jpg);
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.Contact h2{
+  font-size: 40px;
+  margin-top: 200px;
+  height: fit-content;
+}
+.Contact span{
+  font-size:25px;
+  margin-top: 50;
+}
+#email_link{
+  color:#feda4e;
+}
