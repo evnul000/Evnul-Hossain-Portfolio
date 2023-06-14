@@ -10,7 +10,7 @@ import SassLogo from "../assets/images/sass-logo.png";
 import Particles from "react-tsparticles";
 import { loadFull } from "tsparticles";
 import GameWay from "../assets/images/gameway.png";
-import Todo from "../assets/images/todo.png";
+import Todo from "../assets/images/Todo.png";
 import Queens from "../assets/images/8Queens.png";
 import "./Homepage.scss"
 
