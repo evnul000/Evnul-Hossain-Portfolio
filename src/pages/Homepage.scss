@@ -1,0 +1,454 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+  
+  .container {
+    width: 100%;
+    margin-top: 10vh;
+  }
+  *,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #f6aca2;
+  --color-secondary: #f49b90;
+  --color-tertiary: #f28b7d;
+  --color-quaternary: #f07a6a;
+  --color-quinary: #ee6352;
+  /*
+  --color-primary: #5192ED;
+  --color-secondary: #69A1F0;
+  --color-tertiary: #7EAEF2;
+  --color-quaternary: #90BAF5;
+  --color-quinary: #A2C4F5;
+  */
+}
+  .home_card {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    visibility: visible;
+   
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    font-size: 20vh;
+    text-align: center;
+    font-family: 'Bebas Neue', sans-serif;
+   .particles-js{
+    z-index: -1;
+   }
+    .name {
+        padding-bottom: 10vh;
+        margin: 0 auto;
+      }
+      
+      .name h2 {
+        color: #fff;
+        font-size: 1em;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+      
+      .name h2:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 2px #03a9f4;
+      }
+      
+      .name h2:nth-child(2) {
+        color: #03a9f4;
+        animation: animate 4s ease-in-out infinite;
+      }
+      
+      .name-1 {
+       display:flex;
+       margin:0 auto;
+       margin-bottom: 50vh;
+       white-space: nowrap; /* Add this line */
+      }
+      
+      .name-1 h2 {
+        color: #fff;
+        font-size: 4rem;
+        position: absolute;
+        transform: translate(-50%, -50%);
+      }
+      
+      .name-1 h2:nth-child(1) {
+        color: transparent;
+        -webkit-text-stroke: 2px #03a9f4;
+      }
+      
+      .name-1 h2:nth-child(2) {
+        color: #03a9f4;
+        animation: animate 4s ease-in-out infinite;
+      }
+      
+      @keyframes animate {
+        0%,
+        100% {
+          clip-path: polygon(
+            0% 45%,
+            16% 44%,
+            33% 50%,
+            54% 60%,
+            70% 61%,
+            84% 59%,
+            100% 52%,
+            100% 100%,
+            0% 100%
+          );
+        }
+      
+        50% {
+          clip-path: polygon(
+            0% 60%,
+            15% 65%,
+            34% 66%,
+            51% 62%,
+            67% 50%,
+            84% 45%,
+            100% 46%,
+            100% 100%,
+            0% 100%
+          );
+        }
+      }
+  }
+  
+ 
+.About_Me_card{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+  visibility: visible;
+  height: 100vh;
+  margin: 0 auto;
+  padding-top: 5vh;
+  font-size: 20px;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(19, 19, 19, 0.8),
+      rgba(46, 46, 46, 0.7)
+    ),
+    url(../assets/images/tropical_1.jpg);
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
+}
+.About_Me_Top{
+    font-size: 5vh;
+}
+.About_Me_Bottom{
+    margin-bottom: 50vh;
+
+        span{
+            margin-right: 15vh;
+            font-size: 3vh;
+            margin-top: 3vh;
+            position: absolute;
+             max-width: 600px; /* Adjust the maximum width as needed */
+    
+        }
+    .Portfolio_img{
+  margin-left: 206px;
+  margin-right: 25px;
+  float: left;
+  width: 300px;
+  border-radius: 20vh;
+} 
+}
+
+.skills_card{
+    display:flex;
+  flex-direction: column;
+  height: 100vh;
+  text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
+  background-image: linear-gradient(
+      115deg,
+      rgba(19, 19, 19, 0.8),
+      rgba(46, 46, 46, 0.7)
+    ),
+    url(../assets/images/tropical_2.jpg);
+    background-size: cover;
+       
+
+        .text_shadows {
+            text-shadow: 3px 3px 0 var(--color-secondary), 6px 6px 0 var(--color-tertiary),
+              9px 9px var(--color-quaternary), 12px 12px 0 var(--color-quinary);
+            font-family: bungee, sans-serif;
+            font-weight: 400;
+            text-transform: uppercase;
+            font-size: calc(1rem + 3vw);
+            text-align: center;
+            margin-top: 15vh;
+            color: var(--color-primary);
+            //color: transparent;
+            //background-color: white;
+            //background-clip: text;
+            animation: shadows 1.2s ease-in infinite, move 1.2s ease-in infinite;
+            letter-spacing: 0.4rem;
+          }
+          
+          @keyframes shadows {
+            0% {
+              text-shadow: none;
+            }
+            10% {
+              text-shadow: 3px 3px 0 var(--color-secondary);
+            }
+            20% {
+              text-shadow: 3px 3px 0 var(--color-secondary),
+                6px 6px 0 var(--color-tertiary);
+            }
+            30% {
+              text-shadow: 3px 3px 0 var(--color-secondary),
+                6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+            }
+            40% {
+              text-shadow: 3px 3px 0 var(--color-secondary),
+                6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+                12px 12px 0 var(--color-quinary);
+            }
+            50% {
+              text-shadow: 3px 3px 0 var(--color-secondary),
+                6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+                12px 12px 0 var(--color-quinary);
+            }
+            60% {
+              text-shadow: 3px 3px 0 var(--color-secondary),
+                6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary),
+                12px 12px 0 var(--color-quinary);
+            }
+            70% {
+              text-shadow: 3px 3px 0 var(--color-secondary),
+                6px 6px 0 var(--color-tertiary), 9px 9px var(--color-quaternary);
+            }
+            80% {
+              text-shadow: 3px 3px 0 var(--color-secondary),
+                6px 6px 0 var(--color-tertiary);
+            }
+            90% {
+              text-shadow: 3px 3px 0 var(--color-secondary);
+            }
+            100% {
+              text-shadow: none;
+            }
+          }
+          
+          @keyframes move {
+            0% {
+              transform: translate(0px, 0px);
+            }
+            40% {
+              transform: translate(-12px, -12px);
+            }
+            50% {
+              transform: translate(-12px, -12px);
+            }
+            60% {
+              transform: translate(-12px, -12px);
+            }
+            100% {
+              transform: translate(0px, 0px);
+            }
+          }   
+    .skills_grid {
+        font-size: 1.5vh;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 10vh;
+        list-style-type: none;
+        padding: 10vh;
+        margin: 0 auto;
+        padding-top: 0;
+        
+        .skills-logo-java{
+            width: 120px;
+        }
+        .skills-logo-html{
+            width: 120px;
+        }
+        .skills-logo-css{
+            width: 80px;
+        }
+        .skills-logo-react{
+            width: 100px;
+        }
+        .skills-logo-js{
+            width: 150px;
+        }
+        .skills-logo-sass{
+            width: 100px;
+        }
+      }
+   
+    
+}
+html{
+  overflow: hidden;
+  overflow-y: scroll;
+}
+html::-webkit-scrollbar {
+    
+    width: 5px;
+  
+}
+ 
+html::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(255, 255, 255, 0.3);
+   
+}
+
+/* Style the scrollbar thumb */
+html::-webkit-scrollbar-thumb {
+  background-color: rgba(198, 241, 6, 0.849);
+  border-radius: 10px;
+}
+
+/* Style the scrollbar thumb on hover */
+html::-webkit-scrollbar-thumb:hover {
+  background-color: rgba(51, 51, 51, 0.4);
+}
+
+/* Style the scrollbar thumb when active (being clicked) */
+html::-webkit-scrollbar-thumb:active {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+ @media
+  (prefers-reduced-motion: no-preference) {
+    html {
+      scroll-behavior: smooth;
+    }
+  }
+
+
+.project-card{
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+
+  .title{
+    font-size: 6vh;
+    margin-top: 13vh;
+    text-align: center;
+    margin-bottom: .5vh;
+  }
+  .project-grid{
+    display:flex;
+    justify-content: space-between;
+    padding: 10vh;
+    list-style: none;
+    .gameway{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: -10vh;
+      background-color: #ffe600;
+      padding: 2vh;
+      border-radius: 4vh;
+      box-shadow: 0 15px 4px rgba(0, 0, 0, 0.212); // Customize the shadow properties as needed
+      border:none;
+      h2{
+        text-align: center;
+        font-size: 3vh;
+        color:#00151b;
+     }
+     span{
+       width: 500px;
+       color:#00151b;
+     }
+      img{
+        border: solid #00151b 10px;
+        border-radius: 25vh;
+        height: 35vh;
+        width: 35vh;
+        background-size:auto;
+        margin-bottom: 3vh;
+      }
+      
+    }
+    .todo{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #5a5a5a;
+      padding: 2vh;
+      border-radius: 4vh;
+      box-shadow: 0 15px 4px rgba(0, 0, 0, 0.212); // Customize the shadow properties as needed
+      border:none;
+      h2{
+         text-align: center;
+         font-size: 3vh;
+      }
+      span{
+        width: 400px;
+      }
+      img{
+        border: solid #feda4e 10px;
+        border-radius: 25vh;
+        height: 25vh;
+        width: 25vh;
+        background-size:cover;
+        margin-bottom: 3vh;
+      }
+    }
+    .EightQueens{
+      display:flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: #8400ff;
+      padding: 2vh;
+      border-radius: 4vh;
+      box-shadow: 0 15px 4px rgba(0, 0, 0, 0.212); // Customize the shadow properties as needed
+      border:none;
+      h2{
+        text-align: center;
+        font-size: 3vh;
+     }
+     span{
+       width: 400px;
+     }
+      img{
+        border: solid #0141f1 10px;
+        border-radius: 25vh;
+        height: 25vh;
+        width: 25vh;
+        background-size: cover;
+        margin-bottom: 3vh;
+      }
+    }
+  }
+}
+
+
+.Contact{
+  height: 100vh;
+  left: 0;
+    display:flex;
+    flex-direction: column;
+    visibility: visible;
+  
+    
+   
+    margin: 0 auto;
+    text-align: center;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-size: cover;
+}
+.Contact h2{
+  font-size: 40px;
+  margin-top: 200px;
+  height: fit-content;
+}
+.Contact span{
+  font-size:25px;
+  margin-top: 50;
+}
+#email_link{
+  color:#feda4e;
+}
